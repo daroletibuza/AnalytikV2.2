@@ -80,7 +80,7 @@
 				%xtick = {0,10,...,100},
 				ylabel={Stromstärke I [\si{\nano\ampere}]},
 				xlabel={Zugesetzte Bleikonzentration [\si{\milli\gram\per\liter}]},
-					\legend style={at={(0.5,0.95)},anchor=west}
+					legend style={at={(0.5,0.95)},anchor=west},
 				scatter/classes={
 					a={mark=square*,blue},
 					b={mark=triangle*,red},
@@ -102,7 +102,7 @@
 \addplot[red,domain=-8:16]
 {17.96872125*x+143.75038333};
 			
-			\legend{T=\SI{23,5}{\celsius},T=\SI{30,2}{\celsius},T=\SI{37,0}{\celsius}};
+			\legend{Messreihe 1,Messreihe 2};
 				\end{axis}
 				\end{tikzpicture}
 			}
@@ -111,7 +111,7 @@
 		\end{center}
 	\end{figure}
 	\FloatBarrier
-	Die Nusstellen der Kalibriergeraden liegen bei -8,00 und -6,54. Der Betrag dieser Werte entspricht der Ausgangskonzentration von \SI{8}{\milli\gram\per\liter} und \SI{6,54}{\milli\gram\per\liter}. 
+	Die Nusstellen der Kalibriergeraden liegen bei -8,000 und -6,538. Der Betrag dieser Werte entspricht der Ausgangskonzentration von \SI{8,000}{\milli\gram\per\liter} und \SI{6,538}{\milli\gram\per\liter}. 
 	Die manuell ermittelten Konzentrationen entsprechen beinahe den Computerberechneten Werten.
 	  %Tabelle START
 	  \vspace*{-2.5mm}
@@ -126,9 +126,9 @@
 	  	&\textbf{Computer}&\textbf{Manuell}\\
 	  		\hline
 	  		\hline
-		  	Messung 1&5,757&6,538\\
+		  	Messung 1&\SI{5,757}{\milli\gram\per\liter}&\SI{6,538}{\milli\gram\per\liter}\\
 	  		\hline
-	  		Messung 2&7,186&8,000\\
+	  		Messung 2&\SI{7,186}{\milli\gram\per\liter}&\SI{8,000}{\milli\gram\per\liter}\\
 	  		\hline
 	  	\end{tabulary}
 	  	%}
