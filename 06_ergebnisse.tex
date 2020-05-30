@@ -64,53 +64,50 @@
 	$$f_1(x)=y=17,96873125 x + 143,75038333 $$
 	$$f_2(x)=y=19,01041875 x + 124,30555 $$
 	
-	\begin{figure}[h!]
-		\begin{center}
-			\resizebox{0.8\textwidth}{!}{
-				\begin{tikzpicture}[trim axis left, trim axis right]
-				\begin{axis}[
-				axis lines = left,
-				width = 13cm,
-				height = 7cm,
-				xmin = -9,
-				xmax = 17,
-				ymin = 0,
-				ymax = 450,
-				%ytick = {0,2,...,14},
-				%xtick = {0,10,...,100},
-				ylabel={Stromstärke I [\si{\nano\ampere}]},
-				xlabel={Zugesetzte Bleikonzentration [\si{\milli\gram\per\liter}]},
-					legend style={at={(0.5,0.95)},anchor=west},
-				scatter/classes={
-					a={mark=square*,blue},
-					b={mark=triangle*,red},
-					c={mark=o,draw=black}
-				}
-				]
-				\addplot[scatter,only marks,
-				scatter src=explicit symbolic]
-				coordinates {
-					(0,125) 	[a]
-					(8,275) 	[a]
-					(16,429.1662)[a]
-					(0,141.667) 	[b]
-					(8,291.667)    	[b]
-					(16,429.1667)	[b]
-				};
-\addplot[blue,domain=-8:16]
-{19.01041875*x+124.30555};
-\addplot[red,domain=-8:16]
-{17.96872125*x+143.75038333};
-			
-			\legend{Messreihe 1,Messreihe 2};
-				\end{axis}
-				\end{tikzpicture}
-			}
-			\caption{Kalibriergeraden - manuell}
-			\label{dia:kalibriergeraden}
-		\end{center}
-	\end{figure}
-	\FloatBarrier
+%	\begin{figure}[h!]
+%		\begin{center}
+%			\resizebox{0.8\textwidth}{!}{
+%				\begin{tikzpicture}[trim axis left, trim axis right]
+%				\begin{axis}[
+%				axis lines = left,
+%				width = 13cm,
+%				height = 7cm,
+%				xmin = -9,
+%				xmax = 17,
+%				ymin = 0,
+%				ymax = 450,
+%				%ytick = {0,2,...,14},
+%				%xtick = {0,10,...,100},
+%				ylabel={Stromstärke I [\si{\nano\ampere}]},
+%				xlabel={Zugesetzte Bleikonzentration [\si{\milli\gram\per\liter}]},
+%					legend style={at={(0.5,0.95)},anchor=west},
+%				scatter/classes={
+%					a={mark=square*,blue},
+%					b={mark=triangle*,red},
+%					c={mark=o,draw=black}
+%				}
+%				]
+%%				\addplot[scatter,only marks,
+%%				scatter src=explicit symbolic]
+%%				coordinates {
+%%					(0,125) 	[a]
+%%					(8,275) 	[a]
+%%					(16,429.1662)[a]
+%%					(0,141.667) 	[b]
+%%					(8,291.667)    	[b]
+%%					(16,429.1667)	[b]
+%%				};
+%				\addplot[blue,domain=-8:16]{19.01041875*x+124.30555};
+%				\addplot[red,domain=-8:16]{17.96872125*x+143.75038333};
+%				\legend{Messreihe 1,Messreihe 2};
+%				\end{axis}
+%				\end{tikzpicture}
+%			}
+%			\caption{Kalibriergeraden - manuell}
+%			\label{dia:kalibriergeraden}
+%		\end{center}
+%	\end{figure}
+%	\FloatBarrier
 	Die Nusstellen der Kalibriergeraden liegen bei -8,000 und -6,538. Der Betrag dieser Werte entspricht der Ausgangskonzentration von \SI{8,000}{\milli\gram\per\liter} und \SI{6,538}{\milli\gram\per\liter}. 
 	Die manuell ermittelten Konzentrationen entsprechen beinahe den Computerberechneten Werten.
 	  %Tabelle START
@@ -207,40 +204,40 @@
 \vspace*{-2.5mm}
 %Tabelle ENDE
 
-%\begin{figure}[h!]
-%	\begin{center}
-%		\resizebox{0.95\textwidth}{!}{
-%		\begin{tikzpicture}[trim axis left, trim axis right]
-%		\begin{axis}[
-%		axis lines = middle,
-%		width = 20cm,
-%		height = 10cm,
-%		xmin = -10,
-%		xmax = 20,
-%	%	ymin = -0.1,
-%	%	ymax = 0,
-%	%	ytick = {-4.5,-4,...,-1},
-%	%	xtick = {-10,-9,...,20},
-%		ylabel={Leistung in \si{\nano \watt}},
-%		y label style={at={(0.25,0.40)}, rotate=90},
-%		xlabel={Konzentration der Blei-Standard-Zugabe in \si{\milli \gram \per \milli \liter}},
-%		legend style={at={(0.75,0.45)},anchor=west}
-%		]
-%		\addplot table {datenm1.dat};
-%		\addplot +[mark=none, dashed, black, domain=-10:20] {-2e-8*x-1e-7};
-%		\addplot table {datenm2.dat};
-%		\addplot +[mark=none, dotted, black, domain=-10:20] {-2e-5*x - 0.0001};
-%		
-%		\legend{Messreihe 1, Regression Messreihe 1,Messreihe 2, Regression Messreihe 2};
-%		\end{axis}
-%		\end{tikzpicture}
-%			}
-%		\caption{Berechnete Leitungen in Abhängigkeit von der Konzentration der Blei-Standardzugabe (siehe Tab. \ref{tab:messreihe1} und Tab. \ref{tab:messreihe2})}
-%		\label{dia:lnr/lnc}
-%	\end{center}
-%\end{figure}
-%\FloatBarrier
-%\vspace*{-5mm}
+\begin{figure}[h!]
+	\begin{center}
+		\resizebox{0.95\textwidth}{!}{
+		\begin{tikzpicture}[trim axis left, trim axis right]
+		\begin{axis}[
+		axis lines = middle,
+		width = 20cm,
+		height = 10cm,
+		xmin = -10,
+		xmax = 20,
+	%	ymin = -0.1,
+	%	ymax = 0,
+	%	ytick = {-4.5,-4,...,-1},
+	%	xtick = {-10,-9,...,20},
+		ylabel={Leistung in \si{\nano \watt}},
+		y label style={at={(0.25,0.40)}, rotate=90},
+		xlabel={Konzentration der Blei-Standard-Zugabe in \si{\milli \gram \per \milli \liter}},
+		legend style={at={(0.75,0.45)},anchor=west}
+		]
+		\addplot table {datenm1.dat};
+		\addplot +[mark=none, dashed, black, domain=-10:20] {-2e-8*x-1e-7};
+		\addplot table {datenm2.dat};
+		\addplot +[mark=none, dotted, black, domain=-10:20] {-2e-5*x - 0.0001};
+		
+		\legend{Messreihe 1, Regression Messreihe 1,Messreihe 2, Regression Messreihe 2};
+		\end{axis}
+		\end{tikzpicture}
+			}
+		\caption{Berechnete Leitungen in Abhängigkeit von der Konzentration der Blei-Standardzugabe (siehe Tab. \ref{tab:messreihe1} und Tab. \ref{tab:messreihe2})}
+		\label{dia:lnr/lnc}
+	\end{center}
+\end{figure}
+\FloatBarrier
+\vspace*{-5mm}
 
 \pagebreak
 
