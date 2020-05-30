@@ -60,7 +60,9 @@
 	\item  Polarogramm Probe mit Aufstockungen ?
 	\item  Quantitative Auswertung des Programms
 	\item  MANUELLE KALIBRIERGERADE !!\\
-	Die Kalibriergerade wird manuell erstellt in dem die die gemessenen Stromstärken der Peaks über dem Konzentrationszuschuss durch die Zugabe der Blei Standardlösung aufgetragen werden. Die Stromstärken für die Y-Achse werden aus den gewonnenen Polarogrammen abgelesen. Hier treten Ablesefehler von etwa $\pm$ \SI{10}{\nano\ampere} auf. Die Konzentrationsänderung bei Addition von Standardlösung wird entsprechend der Gleichungen \ref{gl:7} und (\ref{gl:8}) berechnet. 
+	Die Kalibriergerade wird manuell erstellt in dem die die gemessenen Stromstärken der Peaks über dem Konzentrationszuschuss durch die Zugabe der Blei Standardlösung aufgetragen werden. Die Stromstärken für die Y-Achse werden aus den gewonnenen Polarogrammen abgelesen. Hier treten Ablesefehler von etwa $\pm$ \SI{10}{\nano\ampere} auf. Die Konzentrationsänderung bei Addition von Standardlösung wird entsprechend der Gleichungen \ref{gl:7} und (\ref{gl:8}) berechnet. Mittels des Tabellenkalkulationsprogramms \textit{LibreOffice Calc} wurde eine lineare Regression zur Bestimmung der Kalibriergeradengleichung durchgeführt. Es ergaben sich folgende Funktionsgleichungen:
+	$$f_1(x)=y=17,96873125 x + 143,75038333 $$
+	$$f_2(x)=y=19,01041875 x + 124,30555 $$
 	
 	\begin{figure}[h!]
 		\begin{center}
@@ -70,42 +72,73 @@
 				axis lines = left,
 				width = 13cm,
 				height = 7cm,
-				xmin = 0,
+				xmin = -9,
 				xmax = 17,
 				ymin = 0,
 				ymax = 450,
 				%ytick = {0,2,...,14},
 				%xtick = {0,10,...,100},
-				ylabel={c(NaOH) in [\si{\milli\mole\per\liter}]},
-				xlabel={t in [\si{\second}]},
-				%	legend style={at={(0.5,0.95)},anchor=west}
+				ylabel={Stromstärke I [\si{\nano\ampere}]},
+				xlabel={Zugesetzte Bleikonzentration [\si{\milli\gram\per\liter}]},
+					\legend style={at={(0.5,0.95)},anchor=west}
+				scatter/classes={
+					a={mark=square*,blue},
+					b={mark=triangle*,red},
+					c={mark=o,draw=black}
+				}
 				]
-				
-\addplot[scatter,only marks,
-scatter src=explicit symbolic]
-coordinates {
-	(8,100)  [a]
-	(10,100) [c]
-	(0.02,0.17) [a]
-	(0.06,0.1)  [a]
-	(0.9,0.5)   [b]
-	(0.5,0.3)   [c]
-	(0.85,0.52) [b]
-	(0.12,0.05) [a]
-	(0.73,0.45) [b]
-	(0.53,0.25) [c]
-	(0.76,0.5)  [b]
-	(0.55,0.32) [c]
-};
+				\addplot[scatter,only marks,
+				scatter src=explicit symbolic]
+				coordinates {
+					(0,125) 	[a]
+					(8,275) 	[a]
+					(16,429.1662)[a]
+					(0,141.667) 	[b]
+					(8,291.667)    	[b]
+					(16,429.1667)	[b]
+				};
+\addplot[blue,domain=-8:16]
+{19.01041875*x+124.30555};
+\addplot[red,domain=-8:16]
+{17.96872125*x+143.75038333};
+			
+			\legend{T=\SI{23,5}{\celsius},T=\SI{30,2}{\celsius},T=\SI{37,0}{\celsius}};
 				\end{axis}
 				\end{tikzpicture}
 			}
-			\caption{Konzentration von NaOH über der Zeit}
-			\label{dia:c/t}
+			\caption{Kalibriergeraden - manuell}
+			\label{dia:kalibriergeraden}
 		\end{center}
 	\end{figure}
 	\FloatBarrier
-	\item  Aliquotierfaktor\\
+	Die Nusstellen der Kalibriergeraden liegen bei -8,00 und -6,54. Der Betrag dieser Werte entspricht der Ausgangskonzentration von \SI{8}{\milli\gram\per\liter} und \SI{6,54}{\milli\gram\per\liter}. 
+	Die manuell ermittelten Konzentrationen entsprechen beinahe den Computerberechneten Werten.
+	  %Tabelle START
+	  \vspace*{-2.5mm}
+	  \renewcommand{\arraystretch}{1.2}
+	  \begin{table}[h!]
+	  	\centering
+	  	\caption{Vergleich der ermittelten Konzentrationen aus manueller und Computergestützter Berechnung}
+	  	\label{tab:mauell,automatisch}
+	  	%	\resizebox{17cm}{!}{
+	  	\begin{tabulary}{\textwidth}{|L|C|C|}
+	  		\hline
+	  	&\textbf{Computer}&\textbf{Manuell}\\
+	  		\hline
+	  		\hline
+		  	Messung 1&5,757&6,538\\
+	  		\hline
+	  		Messung 2&7,186&8,000\\
+	  		\hline
+	  	\end{tabulary}
+	  	%}
+	  \end{table}
+	  \FloatBarrier
+	  \vspace*{-2.5mm}
+	  %Tabelle ENDE
+	
+	\item  Aliquotierfaktor\\ 
+	Die
 \end{itemize}
 
 \textbf{Berechnung der Blei-Standard-Zugaben-Konzentration:}
