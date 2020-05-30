@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 \select@language {ngerman}
 \contentsline {section}{\numberline {1}Einleitung}{2}{section.1}
 \contentsline {section}{\numberline {2}Theorie}{2}{section.2}
@@ -10,26 +9,8 @@
 \contentsline {subsection}{\numberline {4.2}Versuchsteil 2: Identifikation und Quantifizierung des Analyten Blei der Wasserprobe}{6}{subsection.4.2}
 \contentsline {section}{\numberline {5}Ergebnisse}{7}{section.5}
 \contentsline {subsection}{\numberline {5.1}Versuchteil 1:}{7}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Versuchsteil 2:}{7}{subsection.5.2}
-\contentsline {section}{\numberline {6}Diskussion}{7}{section.6}
-\contentsline {subsection}{\numberline {6.1}Fragen und Aufgaben aus der Anleitung}{7}{subsection.6.1}
-\contentsline {subsubsection}{\numberline {6.1.1}Wie gro\IeC {\ss } ist die Konzentration des Puffers jetzt?}{7}{subsubsection.6.1.1}
-\contentsline {section}{\numberline {7}Fehlerbetrachtung}{7}{section.7}
-\contentsline {section}{Anhang}{8}{section*.5}
-\contentsline {section}{Literaturverzeichnis}{9}{section*.7}
-=======
-\babel@toc {ngerman}{}
-\contentsline {section}{\numberline {1}Einleitung}{2}{section.1}% 
-\contentsline {section}{\numberline {2}Theorie}{2}{section.2}% 
-\contentsline {section}{\numberline {3}Geräte und Chemikalien}{4}{section.3}% 
-\contentsline {section}{\numberline {4}Durchführung}{4}{section.4}% 
-\contentsline {subsection}{\numberline {4.1}Versuchsteil 1: Aufnahme und Glättung des Polarogramms}{4}{subsection.4.1}% 
-\contentsline {subsection}{\numberline {4.2}Versuchsteil 2: Identifikation und Quantifizierung des Analyten Blei der Wasserprobe}{5}{subsection.4.2}% 
-\contentsline {section}{\numberline {5}Ergebnisse}{6}{section.5}% 
-\contentsline {subsection}{\numberline {5.1}Versuchteil 1:}{6}{subsection.5.1}% 
-\contentsline {subsection}{\numberline {5.2}Versuchsteil 2:}{7}{subsection.5.2}% 
-\contentsline {section}{\numberline {6}Diskussion}{13}{section.6}% 
-\contentsline {section}{\numberline {7}Fehlerbetrachtung}{13}{section.7}% 
-\contentsline {section}{Anhang}{14}{section*.9}% 
-\contentsline {section}{Literaturverzeichnis}{15}{section*.10}% 
->>>>>>> master
+\contentsline {subsection}{\numberline {5.2}Versuchsteil 2:}{9}{subsection.5.2}
+\contentsline {section}{\numberline {6}Diskussion}{15}{section.6}
+\contentsline {section}{\numberline {7}Fehlerbetrachtung}{15}{section.7}
+\contentsline {section}{Anhang}{16}{section*.10}
+\contentsline {section}{Literaturverzeichnis}{17}{section*.11}
