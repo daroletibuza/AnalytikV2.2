@@ -1,20 +1,6 @@
-\section{Ergebnisse}
+\section{Ergebnisse und Berechnungen}
 \label{sec:ergebnisse}
 \subsection{Versuchteil 1:}
- 
- 	\textcolor{red}{Interpretation mit Reaktionsgleichung Sauerstoff}\\
- 		\begin{flalign}\label{gl:5}
- 			\ce{O2 + 2 e^- + 2 H2O -> H2O2 + 2 OH-}
- 		\end{flalign}
- 		\begin{flalign}\label{gl:6}
- 		\ce{H2O2 + 2 e^- -> 2 OH^-}
- 		\end{flalign}
- 	\textcolor{red}{Vergleich Polarogramm geglättet und ungeglättet}\\
- 	Das ungeglättete Polarogramm (vgl. Abb.\ref{fig:daten_farbig} in gelb) zeigt den Stomstärkeverlauf in Anwesenheit von Sauerstoff. Es treten Peaks auf, wenn die Reduktionsreaktionen (\ref{gl:5}) bei etwa \SI{0}{\volt} und (\ref{gl:6}) bei etwa \SI{-1}{\volt} ablaufen. Nach erfolgter Spülung mit Stickstoff ist der Sauertoff aus der Lösung verschwunden. Er kann nicht mehr reduziert werden und stört darum auch nicht mehr das Polarogramm (vgl. Abb.\ref{fig:daten_farbig} in schwarz) welches damit als geglättet anzusehen ist. Es besitzt nun einen quasi horizontalen Verlauf.\\
- 	
- 	\textcolor{red}{Zuordnung Begründen}\\
- Die Peaks können den enthaltenen Elementen aufgrund ihrer Stellung in der elektrochemischen Spannungsreihe zugeordnet werden. Je edler ein Metall ist, umso höher ist auch das entsprechende Standardelektrodenpotential und umso eher wird es reduziert. \\
- Dder zweite Peak kann besonders sicher dem Blei zugeordnet werden, da durch wissentliche Erhöhung der Bleikonzentration ein größerer Ausschlag erkennbar ist.
  
  %Start
  \begin{figure}[h!]
@@ -218,16 +204,16 @@
 	\subsubsection*{Ausreißertests der zusammengefassten Messreihen 1 und 2:}
 	
 	\textbf{Berechnung des Mittelwertes:}
-	\begin{flalign}
+	\begin{flalign}\label{Gl:Mittelwert-Beispielrechnung1}
 		\bar{x} &= \frac{\sum_{n=1}^{N}x_n}{N}
 	\end{flalign}
-	\begin{flalign}
+	\begin{flalign}\label{Gl:Mittelwert-Beispielrechnung2}
 	\bar{x} &= \frac{-139,2-129,2-113,0-112,5}{4}
 			&= \underline{-123,5}
 	\end{flalign}
 	
 	\textbf{Berechnung der Standardabweichung:}
-	\begin{flalign}
+	\begin{flalign}\label{Gl:Standardabweichung-Beispielrechnung}
 	s &= \sqrt{\frac{\sum_{n=1}^{N}(x_n-\bar{x})^2}{N-1}}
 	\end{flalign}
 %	\begin{footnotesize}
@@ -384,7 +370,7 @@
 	  		$c_2$&\SI{7,186}{\milli\gram\per\liter}&\SI{7,487}{\milli\gram\per\liter}&-&&\\
 	  		\hline
 	  		\hline
-	  		$\bar{c}$&\SI{6,472}{\milli\gram\per\liter}&\SI{6,697}{\milli\gram\per\liter}&\SI{6,606}{\milli\gram\per\liter}&\SI{6,591}{\milli \gram \per \liter}&\SI{0,0925}{\milli \gram \per \liter}\\
+	  		$\bar{c}$&\SI{6,472}{\milli\gram\per\liter}&\SI{6,697}{\milli\gram\per\liter}&\SI{6,606}{\milli\gram\per\liter}&\SI{6,591}{\milli \gram \per \liter}&\SI{0,113}{\milli \gram \per \liter}\\
 	  		\hline
 	  		
 	  	\end{tabulary}
@@ -396,15 +382,15 @@
 	  \subsubsection*{Bestimmung des Bleigehaltes in der originalen Probe:}
 	  
 	  \textcolor{red}{Für Vertrauensbereich werden alle drei Auswertungsmethoden heran gezogen. Ist das so richtig gedacht ?}\\
-	  
+	  \textcolor{blue}{Ja, ich denke das ist die sinnvollste Variante und am Aussagekräftigsten.}
 	  \textbf{Berechnung des Vertrauensintervalls:}\\
-	  Für die Berechnungen des Mittelwertes und der Standardabweichung siehe Gl. ...
+	  Für die Berechnungen des Mittelwertes und der Standardabweichung siehe Gl. (\ref{Gl:Mittelwert-Beispielrechnung1}),(\ref{Gl:Mittelwert-Beispielrechnung2}) und (\ref{Gl:Standardabweichung-Beispielrechnung}).
 	  \begin{flalign}
 	  	conf(\bar{x}) 	&= \bar{x}\pm \frac{t}{\sqrt{N}}*s				
 	  \end{flalign}
 	   \begin{flalign}
-	  	conf(\bar{x})	&= \SI{6,591}{\milli \gram \per \liter}\pm \frac{4,303}{\sqrt{3}}*\SI{0,0925}{\milli \gram \per \liter}\\
-	  					&= \underline{\SI{6,591}{\milli \gram \per \liter}\pm \SI{0,230}{\milli \gram \per \liter}}
+	  	conf(\bar{x})	&= \SI{6,591}{\milli \gram \per \liter}\pm \frac{4,303}{\sqrt{3}}*\SI{0,113}{\milli \gram \per \liter}\\
+	  					&= \underline{\SI{6,591}{\milli \gram \per \liter}\pm \SI{0,280}{\milli \gram \per \liter}}
 	  \end{flalign}
 	  
 	  
@@ -424,12 +410,11 @@
 	\begin{flalign}
 	m_{\text{original}} 	&= m_{\text{mess}} *f_A\\
 	m_{\text{original}} 	&= V_{\text{mess}} *c*f_A\\
-							&= \SI{25e-3}{\liter} *\left(\SI{6,591}{\milli \gram \per \liter}\pm \SI{0,230}{\milli \gram \per \liter}\right)*4\\
-	m_{\text{original}} 	&=\SI{0,659}{\milli \gram}\pm \SI{0,0230}{\milli \gram}
-	 = \underline{\SI{659,1}{\micro \gram}\pm \SI{23,0}{\milli \gram}}\\
+							&= \SI{25e-3}{\liter} *\left(\SI{6,591}{\milli \gram \per \liter}\pm \SI{0,280}{\milli \gram \per \liter}\right)*4\\
+	m_{\text{original}} 	&=\SI{0,659}{\milli \gram}\pm \SI{0,0280}{\milli \gram}
+	 = \underline{\SI{659,1}{\micro \gram}\pm \SI{28,0}{\micro \gram}}\\
 	\end{flalign}
 
 
 \pagebreak
 
- \includepdf[pages=2-5]{Daten_farbig2}

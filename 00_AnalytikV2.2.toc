@@ -7,11 +7,11 @@
 \contentsline {section}{\numberline {4}Durchf\IeC {\"u}hrung}{5}{section.4}
 \contentsline {subsection}{\numberline {4.1}Versuchsteil 1: Aufnahme und Gl\IeC {\"a}ttung des Polarogramms}{5}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Versuchsteil 2: Identifikation und Quantifizierung des Analyten Blei der Wasserprobe}{6}{subsection.4.2}
-\contentsline {section}{\numberline {5}Ergebnisse}{7}{section.5}
+\contentsline {section}{\numberline {5}Ergebnisse und Berechnungen}{7}{section.5}
 \contentsline {subsection}{\numberline {5.1}Versuchteil 1:}{7}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Versuchsteil 2:}{9}{subsection.5.2}
-\contentsline {section}{\numberline {6}Diskussion}{19}{section.6}
-\contentsline {section}{\numberline {7}Fehlerbetrachtung}{19}{section.7}
-\contentsline {section}{Anhang}{20}{section*.19}
-\contentsline {section}{Literaturverzeichnis}{21}{section*.20}
-\contentsline {chapter}{Selbstst\IeC {\"a}ndigkeitserkl\IeC {\"a}rung}{22}{section*.20}
+\contentsline {subsection}{\numberline {5.2}Versuchsteil 2:}{8}{subsection.5.2}
+\contentsline {section}{\numberline {6}Diskussion}{14}{section.6}
+\contentsline {section}{\numberline {7}Fehlerbetrachtung}{14}{section.7}
+\contentsline {section}{Anhang}{16}{section*.19}
+\contentsline {section}{Literaturverzeichnis}{21}{section*.23}
+\contentsline {chapter}{Selbstst\IeC {\"a}ndigkeitserkl\IeC {\"a}rung}{22}{section*.23}
