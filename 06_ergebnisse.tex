@@ -13,6 +13,8 @@
  %Ende   
    
  \textcolor{red}{abgelesene Werte für U händisch und automatisch mit Hilfe des Programms eintragen, für die Peaks}\\
+ \begin{center}
+ 
  
  %Tabelle START
  \vspace*{-2.5mm}
@@ -22,32 +24,36 @@
  	\caption{Zuordnung der Peaks den Elementen des Multielementcocktails}
  	\label{tab:peaks}
  %	\resizebox{17cm}{!}{
- 	\begin{tabulary}{\textwidth}{C|C|C|C|C}
+ 	\begin{tabulary}{\textwidth}{|C|C|C|C|C|}
  		\hline
  		\textbf{Element} 	&  \textbf{Kupfer}  &\textbf{Blei}& \textbf{Cadmium} & \textbf{Zink}\\ 
  							&\ce{Cu}&\ce{Pb}&\ce{Cd}&\ce{Zn}\\
  		\hline
- 		\textbf{E$^\circ$ \tnote{1} \,[V]}&$+0,52$&$-0,13$&$-0,40$&$-0,76$\\
+ 		\textbf{E$^\circ$ \tnote{(1)} \quad[V]}&$+0,52$&$-0,13$&$-0,40$&$-0,76$\\
  		\hline
- 		\textbf{Peak} 		&1&2&3&4\\
+ 		\textbf{Peak Nr.} 		&1&2&3&4\\
  		\hline
- 	
- 		\textbf{Potential [A]} &$-6,75*10^{-7}$&$-3,3*10^{-7}$&$-4,4*10^{-7}$&$-6,86*10^{-7}$\\
+	 	\textbf{Potential [V]} &&&&\\
+ 		Manuell &0,04&-0,38&-0,55&-0,96\\
+ 		Automatisch &0,0369&-0,38&-0,552&-0,969\\
  		\hline
  	\end{tabulary}
  	%}
  		\begin{tablenotes}\footnotesize 
- 					\item[1]Standardelektrodenpotential 
+ 					\item[(1)]Standardelektrodenpotential 
  				\end{tablenotes}
  \end{threeparttable}
  \FloatBarrier 
 % \vspace*{-2.5mm}
  %Tabelle ENDE
- 
- \textcolor{red}{Begründen woher die Unterschiede kommen}
- 
- 
+\end{center}
 \newpage
+ Die Verwendung von Verhältnisgleichungen erlaubte ein sehr präzises, manuelles Ablesen aus dem Diagramm. Eine solche Verhältnisgleichung ist in Gl. (\ref{gl:verhaltnis}) beispielhaft dargestellt. \begin{flalign}\label{gl:verhaltnis}
+ 	\frac{\SI{76}{\milli\meter}}{\SI{-0,600}{\volt}}&=\frac{\SI{122}{\milli\meter}}{x}\\
+ 	x&=\underline{\SI{-0,963158}{\volt}}\approx\underline{\underline{\SI{-0,96}{\volt}}}
+ \end{flalign}
+Anschließend wurde noch sinnvoll gerundet.
+
  
  \subsection{Versuchsteil 2: Identifikation und Quantifizierung des Analyten Blei der Wasserprobe}
 	
