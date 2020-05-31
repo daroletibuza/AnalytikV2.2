@@ -17,7 +17,7 @@
  %Tabelle START
  \vspace*{-2.5mm}
  \renewcommand{\arraystretch}{1.2}
- \begin{table}[h!]
+ \begin{threeparttable}[h!]
  	\centering
  	\caption{Zuordnung der Peaks den Elementen des Multielementcocktails}
  	\label{tab:peaks}
@@ -27,18 +27,21 @@
  		\textbf{Element} 	&  \textbf{Kupfer}  &\textbf{Blei}& \textbf{Cadmium} & \textbf{Zink}\\ 
  							&\ce{Cu}&\ce{Pb}&\ce{Cd}&\ce{Zn}\\
  		\hline
- 		\textbf{Std.-Elektrodenkpotential [V]}&$+0,52$&$-0,13$&$-0,40$&$-0,76$\\
+ 		\textbf{E$^\circ$ \tnote{1} \,[V]}&$+0,52$&$-0,13$&$-0,40$&$-0,76$\\
  		\hline
  		\textbf{Peak} 		&1&2&3&4\\
  		\hline
- 		\textbf{abgelesenes Potential} 		&&&&\\
- 		\textbf{aut.erm. Potential} 		&&&&\\
+ 	
+ 		\textbf{Potential [A]} &$-6,75*10^{-7}$&$-3,3*10^{-7}$&$-4,4*10^{-7}$&$-6,86*10^{-7}$\\
  		\hline
  	\end{tabulary}
  	%}
- \end{table}
- \FloatBarrier
- \vspace*{-2.5mm}
+ 		\begin{tablenotes}\footnotesize 
+ 					\item[1]Standardelektrodenpotential 
+ 				\end{tablenotes}
+ \end{threeparttable}
+ \FloatBarrier 
+% \vspace*{-2.5mm}
  %Tabelle ENDE
  
  \textcolor{red}{Begründen woher die Unterschiede kommen}
