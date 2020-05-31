@@ -5,13 +5,15 @@
 Voltammetrie ist eine Sammelbezeichnung für einige elektrochemische Analysemethoden, bei denen die Spannung (das Potential) und der fließende Strom zwischen mindestens zwei Elektroden betrachtet werden, um daraus Aussagen zur Zusammensetzung einer Probe abzuleiten.\\
 Die \textit{Voltammetrie} ist nicht mit der \textit{Voltametrie} zu verwechseln. Bei letzterer wird lediglich die Spannung gemessen.
 \subsection{Die Elektrochemische Spannungsreihe}
+\textcolor{red}{Text ausarbeiten}
 
 Die Elektrochemische Spannungsreihe ordnet Metalle nach ihrem elektrochemischen Potential. Als Bezug dient dabei stets die Standardwasserstoffelektrode. In Verbindung letzterer Halbzelle mit einem Metall, in seiner einmolaren Metallsalzlösung bei Standardbedingungen, kann das Standardpotential des Metalls als anliegende Spannung zwischen den Elektroden gemessen werden. Das Vorzeichen der Standardpotentiale sagt aus, in welche die Richtung Elektronen strömen. Es besteht ein direkter Zusammenhang zwischen dem Standardelektrodenpotential eines Metalls und dessen Bestreben reduziert zu werden. Je größer das Elektrodenpotential ist, umso edler ist auch das Metall und umso eher wird es reduziert. Verwendung findet dieser Umstand zum Beispiel in der Berechnung galvanischer Elemente. Im folgenden kann anhand der Standardelektrodenpotentiale gelöster Metallionen deren Positionierung in einem Polarogramm abgeleitet werden.\cite{spannungsreihe}\\
 
 \vline
 
+\subsection{Analyse der Polarogramme}
 Grundlage für die Analyse der enthaltenen Metall-Ionen ist die aufgenommene Strom-Spannungs-Kurve des Polarographen. Aufgrund der spezifischen Halbstufenpotentiale von Metall-Ionen ändert sich bei unterschiedlichen Arbeitspotentialen die gemessene Stromstärke. Dieser Strom an der Arbeitselektrode 
-tritt als Folge der Reduktionsreaktion der Metall-Ionen auf und ist direkt proportional zur Konzentration des umgesetzten Stoffes. Der Strom im Zusammenhang mit diesem Massentransport der Ionen wird als \textsc{Faraday}scher Strom bezeichnet. Um eine ausreichende Leitfähigkeit und somit einen entsprechenden Ladungstransport in der Lösung garantieren zu können, werden den untersuchten Proben oft Grundelektrolyten in Form von Salzen, Säuren oder Basen zugegeben.\linebreak
+tritt als Folge der Reduktionsreaktion der Metall-Ionen auf und ist direkt proportional zur Konzentration des umgesetzten Stoffes. Der Strom im Zusammenhang mit diesem Massentransport der Ionen wird als \textsc{Faraday}scher Strom bezeichnet. \linebreak Um eine ausreichende Leitfähigkeit und somit einen entsprechenden Ladungstransport in der Lösung garantieren zu können, werden den untersuchten Proben oft Grundelektrolyten in Form von Salzen, Säuren oder Basen zugegeben.\linebreak
 Aufgrund der spezifischen Halbstufenpotentiale lassen sich qualitative Ergebnisse dieses Verfahrens auswerten. Betrachtet man jedoch auch den Zusammenhang des Stromflusses bei einem bestimmten Arbeitspotential mit der Konzentration des umgesetzten Stoffes, so lassen sich ebenfalls quantitative Bewertungen äußern.\linebreak
 Für diese Betrachtung ist jedoch eine Form der Kalibrierung notwendig, um die gemessenen Signale quantitativ auswerten zu können. Dies ist zum einen über einen externen oder internen Standard möglich, jedoch wurde sich aufgrund der geringen zu bestimmenden Konzentrationen in diesem Versuch für die Aufstockmethode, auch Standardadditionsmethode genannt, entschieden. Möchte man einen internen oder externen Standard nutzen so sind in diesem Fall ebenfalls Kalibrierkurven mit linearem Zusammenhang mittels bekannter Referenz aufzustellen.\linebreak
 Bei dieser Methode wird in diesem Versuch nach der polarographischen Analyse der unbehandelten Probe, eine definierte Menge eines bekannten Standards zugegeben. Dieser Standard enthält dabei den zu bestimmenden Stoff in einer exakt bekannten Konzentration. Aus den gemessenen Datenpunkten lässt sich nun eine Geradengleichung bestimmen (siehe Abb. \ref{fig:standardaddition} und Gl. \ref{gl:1}).
@@ -48,6 +50,7 @@ xA&= -c\\
 c	&= \underline{\underline{\frac{yA}{\frac{y}{x}}}}
 \end{flalign}
 
+\vspace*{-5mm}
 
 %Tabelle START
 \renewcommand{\arraystretch}{1.2}
@@ -58,10 +61,9 @@ c	&= \underline{\underline{\frac{yA}{\frac{y}{x}}}}
 	\label{tab:variablen}
 	%\makebox[\textwidth]{
 	%	\resizebox{17cm}{!}{
-			\begin{tabular}{|c|c|}
+			\begin{tabular}{c|c}
 				\hline
 				\textbf{Variable}&\textbf{Bedeutung} \\
-				\hline
 				\hline
 				A& Analyt \\
 				Z& Zugabe\\
