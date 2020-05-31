@@ -1,32 +1,38 @@
 \section{Ergebnisse und Berechnungen}
 \label{sec:ergebnisse}
-\subsection{Versuchteil 1:}
+\subsection{Versuchsteil 1: Aufnahme und Glättung des Polarogramms}
  
  %Start
  \begin{figure}[h!]
  	\centering
- 	\includegraphics[width=0.9\textwidth]{img/Daten_farbig2}
+ 	\includegraphics[width=1.0\textwidth]{img/Daten_farbig2}
  	\caption{Strom-Spannungskurven (Polarogramme) des Versuchsteils 1}
  	\label{fig:daten_farbig}
  \end{figure}
  \FloatBarrier
- %Ende     
+ %Ende   
+   
+ \textcolor{red}{abgelesene Werte für U händisch und automatisch mit Hilfe des Programms eintragen, für die Peaks}\\
+ 
  %Tabelle START
  \vspace*{-2.5mm}
  \renewcommand{\arraystretch}{1.2}
  \begin{table}[h!]
  	\centering
- 	\caption{Zuordnung der Peaks den Elementen des Multielementencocktails}
+ 	\caption{Zuordnung der Peaks den Elementen des Multielementcocktails}
  	\label{tab:peaks}
  %	\resizebox{17cm}{!}{
  	\begin{tabulary}{\textwidth}{C|C|C|C|C}
  		\hline
- 		\textbf{Element} &  \textbf{Kupfer}  &\textbf{Blei}& \textbf{Cadmium} & \textbf{Zink}\\ 
- 	&\ce{Cu}&\ce{Pb}&\ce{Cd}&\ce{Zn}\\
+ 		\textbf{Element} 	&  \textbf{Kupfer}  &\textbf{Blei}& \textbf{Cadmium} & \textbf{Zink}\\ 
+ 							&\ce{Cu}&\ce{Pb}&\ce{Cd}&\ce{Zn}\\
  		\hline
- 		\textbf{Peak} &1&2&3&4\\
+ 		\textbf{Std.-Elektrodenkpotential [V]}&$+0,52$&$-0,13$&$-0,40$&$-0,76$\\
  		\hline
- 		\textbf{Std.-Elektrodenpotential [V]}&$+0,52$&$-0,13$&$-0,40$&$-0,76$\\
+ 		\textbf{Peak} 		&1&2&3&4\\
+ 		\hline
+ 		\textbf{abgelesenes Potential} 		&&&&\\
+ 		\textbf{aut.erm. Potential} 		&&&&\\
  		\hline
  	\end{tabulary}
  	%}
@@ -35,13 +41,12 @@
  \vspace*{-2.5mm}
  %Tabelle ENDE
  
+ \textcolor{red}{Begründen woher die Unterschiede kommen}
+ 
  
 \newpage
  
- \subsection{Versuchsteil 2:}
-
-	\textcolor{red}{Polarogramm Probe mit Aufstockungen ?}\\
-	\textcolor{red}{Quantitative Auswertung des Programms}
+ \subsection{Versuchsteil 2: Identifikation und Quantifizierung des Analyten Blei der Wasserprobe}
 	
 	\subsubsection*{	Berechnung der Blei-Standard-Zugaben-Konzentration:}
 	\begin{flalign}\label{gl:7}
@@ -197,18 +202,21 @@
 	Die Nullstellen der Kalibriergeraden liegen bei -5,906 und -7,487. Der Betrag dieser Werte entspricht der Ausgangskonzentration von \SI{5,906}{\milli\gram\per\liter} und \SI{7,487}{\milli\gram\per\liter}. 
 	Die manuell ermittelten Konzentrationen entsprechen beinahe den computerberechneten Werten.	\\
 	
-	\textcolor{red}{--> Stark unterschiedliche Messwerte, Neue Betrachtung nötig}
+	Da die Kalibriergeraden der beiden Versuchsdurchführungen signifikante Unterschiede aufwiesen, mit einer Differenz von \SI{1,581}{\milli \gram \per\liter}, wurde sich dazu entschlossen die Daten alternativ auszuwerten.\\
+	Die Daten der Messreihe 1 und 2 wurden hierfür zusammengefasst und werden als eine gemeinsame Datenmenge, mit entsprechender Kalibriergerade, unter dem folgenden Abschnitt betrachtet.
 	
 	\pagebreak
 	
 	\subsubsection*{Ausreißertests der zusammengefassten Messreihen 1 und 2:}
 	
 	\textbf{Berechnung des Mittelwertes:}
-	\begin{flalign}\label{Gl:Mittelwert-Beispielrechnung1}
+	\begin{flalign}
+	\label{Gl:Mittelwert-Beispielrechnung1}
 		\bar{x} &= \frac{\sum_{n=1}^{N}x_n}{N}
 	\end{flalign}
-	\begin{flalign}\label{Gl:Mittelwert-Beispielrechnung2}
-	\bar{x} &= \frac{-139,2-129,2-113,0-112,5}{4}
+	\begin{flalign}
+	\label{Gl:Mittelwert-Beispielrechnung2}
+	\bar{x} &= \frac{-139,2-129,2-113,0-112,5}{4}\\
 			&= \underline{-123,5}
 	\end{flalign}
 	
@@ -381,8 +389,6 @@
 	  
 	  \subsubsection*{Bestimmung des Bleigehaltes in der originalen Probe:}
 	  
-	  \textcolor{red}{Für Vertrauensbereich werden alle drei Auswertungsmethoden heran gezogen. Ist das so richtig gedacht ?}\\
-	  \textcolor{blue}{Ja, ich denke das ist die sinnvollste Variante und am Aussagekräftigsten.}
 	  \textbf{Berechnung des Vertrauensintervalls:}\\
 	  Für die Berechnungen des Mittelwertes und der Standardabweichung siehe Gl. (\ref{Gl:Mittelwert-Beispielrechnung1}),(\ref{Gl:Mittelwert-Beispielrechnung2}) und (\ref{Gl:Standardabweichung-Beispielrechnung}).
 	  \begin{flalign}
@@ -402,7 +408,7 @@
 		f_A=\frac{\SI{100}{\milli\liter}}{\SI{25}{\milli\liter}}=4
 	\end{equation}
 	
-	\textbf{Berechnung der Masse der Originalprobe:}
+	\textbf{Berechnung der Masse an Blei in der Originalprobe:}
 	\begin{flalign}
 		m_{\text{original}} &= m_{\text{mess}} *f_A\\
 		m_{\text{original}} &= V_{\text{mess}} *c*f_A
